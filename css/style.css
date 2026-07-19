@@ -203,67 +203,19 @@ footer{
 }
 /* ==========================
 
-   EDUCATION TIMELINE
+   EDUCATION
 
 ========================== */
 
 .timeline{
 
-    position:relative;
+    display:grid;
 
-    max-width:900px;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 
-    margin:50px auto;
+    gap:25px;
 
-    padding-left:40px;
-
-}
-
-.timeline::before{
-
-    content:"";
-
-    position:absolute;
-
-    left:15px;
-
-    top:0;
-
-    width:4px;
-
-    height:100%;
-
-    background:#b388ff;
-
-    border-radius:10px;
-
-}
-
-.timeline-item{
-
-    position:relative;
-
-    margin-bottom:40px;
-
-}
-
-.timeline-dot{
-
-    position:absolute;
-
-    left:-32px;
-
-    top:35px;
-
-    width:22px;
-
-    height:22px;
-
-    background:#8b5cf6;
-
-    border:5px solid #f7e8ff;
-
-    border-radius:50%;
+    margin-top:35px;
 
 }
 
@@ -271,15 +223,17 @@ footer{
 
     background:rgba(255,255,255,.75);
 
-    backdrop-filter:blur(15px);
+    backdrop-filter:blur(10px);
 
-    border-radius:25px;
+    border-radius:20px;
 
     padding:25px;
 
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    text-align:center;
 
-    transition:.35s;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
 
 }
 
@@ -287,7 +241,7 @@ footer{
 
     transform:translateY(-8px);
 
-    box-shadow:0 15px 30px rgba(0,0,0,.15);
+    box-shadow:0 15px 30px rgba(139,92,246,.25);
 
 }
 
@@ -299,15 +253,11 @@ footer{
 
     object-fit:cover;
 
-    border-radius:18px;
+    border-radius:50%;
 
-    display:block;
+    border:4px solid #b388ff;
 
-    margin:auto;
-
-    margin-bottom:18px;
-
-    border:3px solid #b388ff;
+    margin-bottom:15px;
 
 }
 
@@ -315,9 +265,7 @@ footer{
 
     color:#8b5cf6;
 
-    text-align:center;
-
-    margin-bottom:20px;
+    margin-bottom:15px;
 
 }
 
@@ -325,28 +273,8 @@ footer{
 
     margin:6px 0;
 
-    line-height:1.7;
+    color:#555;
 
-}
-
-.edu-card b{
-
-    color:#6f42c1;
-
-}
-
-@media(max-width:768px){
-
-.timeline{
-
-padding-left:25px;
-
-}
-
-.timeline-dot{
-
-left:-21px;
-
-}
+    line-height:1.6;
 
 }
