@@ -201,3 +201,152 @@ footer{
     color:#666;
 
 }
+/* ==========================
+
+   EDUCATION TIMELINE
+
+========================== */
+
+.timeline{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:50px auto;
+
+    padding-left:40px;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:15px;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:#b388ff;
+
+    border-radius:10px;
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    margin-bottom:40px;
+
+}
+
+.timeline-dot{
+
+    position:absolute;
+
+    left:-32px;
+
+    top:35px;
+
+    width:22px;
+
+    height:22px;
+
+    background:#8b5cf6;
+
+    border:5px solid #f7e8ff;
+
+    border-radius:50%;
+
+}
+
+.edu-card{
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:25px;
+
+    padding:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.edu-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+.school-img{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    display:block;
+
+    margin:auto;
+
+    margin-bottom:18px;
+
+    border:3px solid #b388ff;
+
+}
+
+.edu-card h3{
+
+    color:#8b5cf6;
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+.edu-card p{
+
+    margin:6px 0;
+
+    line-height:1.7;
+
+}
+
+.edu-card b{
+
+    color:#6f42c1;
+
+}
+
+@media(max-width:768px){
+
+.timeline{
+
+padding-left:25px;
+
+}
+
+.timeline-dot{
+
+left:-21px;
+
+}
+
+}
