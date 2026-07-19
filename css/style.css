@@ -146,3 +146,58 @@ footer{
 text-align:center;
 padding:20px;
 }
+/* ===== Profile Page ===== */
+
+.card{
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+.info{
+
+    margin-top:30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.info div{
+
+    background:rgba(255,255,255,.7);
+
+    padding:18px 22px;
+
+    border-radius:18px;
+
+    transition:.3s;
+
+    line-height:1.7;
+
+}
+
+.info div:hover{
+
+    transform:translateX(8px);
+
+    background:white;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+footer{
+
+    text-align:center;
+
+    padding:25px;
+
+    color:#666;
+
+}
