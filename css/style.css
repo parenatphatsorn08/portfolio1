@@ -383,3 +383,86 @@ footer{
     }
 
 }
+/* ==========================
+
+   CONTACT
+
+========================== */
+
+.contact{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:60px 20px;
+
+    text-align:center;
+
+}
+
+.contact h1{
+
+    color:#8b5cf6;
+
+    margin-bottom:10px;
+
+}
+
+.subtitle{
+
+    color:#666;
+
+    margin-bottom:35px;
+
+}
+
+.contact-card{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+.contact-item{
+
+    background:rgba(255,255,255,.8);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.contact-item:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 30px rgba(139,92,246,.25);
+
+}
+
+.contact-item h3{
+
+    color:#8b5cf6;
+
+    margin-bottom:10px;
+
+}
+
+.contact-item p{
+
+    color:#555;
+
+    line-height:1.7;
+
+}
