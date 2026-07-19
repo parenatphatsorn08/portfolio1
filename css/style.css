@@ -383,86 +383,144 @@ footer{
     }
 
 }
-/* ==========================
+/* ===================
 
    CONTACT
 
-========================== */
+=================== */
 
 .contact{
 
-    max-width:900px;
+max-width:1100px;
 
-    margin:auto;
+margin:auto;
 
-    padding:60px 20px;
+padding:60px 20px;
 
-    text-align:center;
+text-align:center;
 
 }
 
 .contact h1{
 
-    color:#8b5cf6;
+font-size:45px;
 
-    margin-bottom:10px;
+color:#8b5cf6;
+
+margin-bottom:10px;
 
 }
 
-.subtitle{
+.contact-sub{
 
-    color:#666;
+color:#666;
 
-    margin-bottom:35px;
+margin-bottom:40px;
+
+}
+
+.contact-box{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
 
 }
 
 .contact-card{
 
-    display:grid;
+background:rgba(255,255,255,.75);
 
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+backdrop-filter:blur(15px);
 
-    gap:25px;
+border-radius:30px;
 
-}
+padding:30px 20px;
 
-.contact-item{
+box-shadow:0 10px 20px rgba(0,0,0,.08);
 
-    background:rgba(255,255,255,.8);
-
-    backdrop-filter:blur(10px);
-
-    border-radius:20px;
-
-    padding:25px;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-
-    transition:.3s;
+transition:.35s;
 
 }
 
-.contact-item:hover{
+.contact-card:hover{
 
-    transform:translateY(-8px);
+transform:translateY(-10px) rotate(-2deg);
 
-    box-shadow:0 15px 30px rgba(139,92,246,.25);
-
-}
-
-.contact-item h3{
-
-    color:#8b5cf6;
-
-    margin-bottom:10px;
+box-shadow:0 15px 35px rgba(139,92,246,.3);
 
 }
 
-.contact-item p{
+.icon{
 
-    color:#555;
+font-size:45px;
 
-    line-height:1.7;
+margin-bottom:15px;
+
+animation:bounce 2s infinite;
+
+}
+
+.contact-card h3{
+
+color:#8b5cf6;
+
+margin-bottom:10px;
+
+}
+
+.contact-card p{
+
+color:#555;
+
+word-break:break-word;
+
+}
+
+.thankyou{
+
+margin-top:50px;
+
+font-size:22px;
+
+color:#8b5cf6;
+
+font-weight:bold;
+
+animation:float 3s ease-in-out infinite;
+
+}
+
+@keyframes bounce{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+}
+
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
 
 }
